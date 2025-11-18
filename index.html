@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Molela Clay Work — Watch Magic Happen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#fdfbf8;
+      --card:#ffffff;
+      --accent:#aa3d32;
+      --accent-light:#d67a69;
+      --muted:#6f6f6f;
+      --radius:16px;
+      --shadow:0 10px 34px rgba(0,0,0,0.08);
+      --max:1280px;
+    }
+
+    *{margin:0; padding:0; box-sizing:border-box;}
+
+    body{
+      font-family:Inter, sans-serif;
+      background:var(--bg);
+      color:#222;
+      padding:34px;
+      line-height:1.75;
+    }
+
+    .wrap{max-width:var(--max); margin:auto;}
+
+    header{
+      background:linear-gradient(130deg, rgba(170,61,50,0.09), rgba(214,122,105,0.08));
+      padding:40px;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      margin-bottom:32px;
+      animation:fadeIn .8s ease forwards;
+    }
+
+    @keyframes fadeIn{
+      from{opacity:0; transform:translateY(18px);} to{opacity:1; transform:translateY(0);} }
+
+    h1{
+      font-family:"Playfair Display", serif;
+      font-size:3rem;
+      margin-bottom:10px;
+      color:var(--accent);
+      letter-spacing:-0.5px;
+    }
+
+    .lead{color:var(--muted); font-size:1.15rem; max-width:700px;}
+
+    .meta{margin-top:18px; display:flex; gap:14px; flex-wrap:wrap; align-items:center;}
+    .badge{background:var(--accent); padding:8px 18px; border-radius:999px; color:white; font-size:0.92rem;}
+
+    .row{display:grid; grid-template-columns:1fr 340px; gap:32px;}
+    @media(max-width:900px){.row{grid-template-columns:1fr;}}
+
+    .card{
+      background:var(--card);
+      padding:32px;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      margin-bottom:32px;
+      transition:.3s;
+    }
+    .card:hover{transform:translateY(-2px);}    
+
+    h2{font-size:1.8rem; margin:28px 0 12px; color:#333; font-weight:600;}
+    h3{color:var(--accent-light); font-size:1.3rem; margin:18px 0; font-weight:600;}
+
+    .image img{width:100%; border-radius:14px; box-shadow:0 4px 14px rgba(0,0,0,0.07);}    
+    .caption{color:var(--muted); margin-top:8px; font-size:0.92rem;}
+
+    .accordion .step{border-top:1px solid #f2e5e1;}
+    .step:first-child{border-top:0;}
+    .step button{
+      background:none; border:0; width:100%;
+      padding:18px 4px; text-align:left; cursor:pointer;
+      font-size:1.08rem; display:flex;
+      justify-content:space-between; align-items:center;
+      transition:.3s;
+    }
+    .step button:hover{color:var(--accent-light);}
+    .chev{transition:.3s;}    
+    .step.open .chev{transform:rotate(180deg);}    
+    .step .body{max-height:0; overflow:hidden; transition:max-height .35s ease;}    
+    .step.open .body{max-height:1200px; padding:6px 0 14px;}    
+
+    iframe{width:100%; height:260px; border-radius:14px; margin-top:12px; box-shadow:0 3px 12px rgba(0,0,0,0.12);}    
+
+    .quote{background:#fff5f2; border-left:4px solid var(--accent-light); padding:16px 20px; font-style:italic; margin-top:20px; border-radius:8px;}
+
+    #quiz button{
+      background:#fff;
+      border:1px solid #eee;
+      padding:12px;
+      border-radius:12px;
+      cursor:pointer;
+      margin-top:8px;
+      width:100%;
+      text-align:left;
+      transition:.2s;
+    }
+    #quiz button:hover{border-color:var(--accent-light);}
+    .correct{background:#d9ffe7 !important; border-color:#3aaa66 !important;}
+    .wrong{background:#ffe4e4 !important; border-color:#d65959 !important;}
+
+    #awards .image-container{text-align:center; margin-bottom:26px;}
+    #awards img{width:100%; border-radius:14px; box-shadow:var(--shadow);}    
+    #awards .image-caption{font-size:0.95rem; margin-top:6px; color:var(--muted);}    
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <h1>Molela Clay Work — Watch Magic Happen</h1>
+      <p class="lead">Hand-shaped terracotta plaques from Molela village, Rajasthan — where stories, devotion and clay meet.</p>
+      <div class="meta">
+        <span class="badge">Geographical Indication</span>
+        <small style="color:var(--muted)">Traditional Craft • Living Heritage • Sustainable Art</small>
+      </div>
+    </header>
+
+    <div class="row">
+      <main>
+        <section class="card">
+          <h2>Molela Clay Work: Borne of Beliefs</h2>
+          <p>Molela clay work begins with an ancient legend passed down through generations. The kumhar (potter) community traces its origins to Abu, later migrating to Nadol, and eventually settling in Molela — a village blessed by the presence of Devnarayan, the guardian deity of justice. Their craft is not merely art; it is a living offering to history, faith, and ancestry.</p>
+
+          <div class="image" style="margin:20px 0;">
+            <img src="https://www.memeraki.com/cdn/shop/products/My-Village-Set-of-4-Terracotta-Art-Tiles-by-Dinesh-Molela-2147_800x.jpg?v=1726166328" alt="Molela clay work">
+            <div class="caption">Traditional Molela Clay Pottery</div>
+          </div>
+
+          <p>We were fortunate to meet Mohanlal Chaturbuj Kumhar, a 15th-generation master artisan whose family has safeguarded this craft for centuries. His dedication has placed the small village of Molela prominently on the global craft map.</p>
+
+          <h2>One village, many stories</h2>
+          <p>Molela is a living museum of devotion, folklore, and artistry. Located near Udaipur and the river Banas, the village is renowned for its unique clay plaques crafted entirely by hand — without a potter’s wheel.</p>
+
+          <div class="image">
+            <img src="https://www.rachnakar.com/wp-content/uploads/2020/10/molela-location.jpg" alt="Molela location">
+            <div class="caption">Molela — a small village near the Banas river.</div>
+          </div>
+
+          <p>The plaques are lightweight due to hollow slab techniques, vividly expressive, and surprisingly durable. Each piece is shaped with devotion and deep cultural memory.</p>
+
+          <h2>Meet the maker</h2>
+          <p>Mohanlal Chaturbuj Kumhar, Padma Shri awardee and Shilp Guru, continues to shape the cultural identity of Molela through his craft.</p>
+
+          <div class="image">
+            <img src="https://www.dsource.in/sites/default/files/resource/molela/people/minigallery/3253/01.jpg" alt="Mohanlal ji">
+            <div class="caption">Mohanlal ji — the guardian of Molela tradition.</div>
+          </div>
+          <p>Mohanlalji has spent his entire lifetime working on Molela clay pottery, ever since the age of 10! He holds a record of covering an entire wall of the nearby railway station with Molela plaques. And he has won around 40 national and state awards for his work, and was kind enough to show us his Padma Sri and Shilp Guru awards. Just holding them left us in awe, as well as the fact that Mohanlalji has his very own wall containing all his awards and pictures. We call it his Wall of Fame.</p>
+
+
+          <blockquote class="quote">"This craft feeds our hands and our stories. If the clay remembers, we must not forget." — Mohanlalji</blockquote>
+
+          <h2>How they make it — step by step</h2>
+          <div class="accordion">
+
+            <div class="step" id="s1">
+              <button onclick="toggleStep('s1')"><span><strong>1. Clay preparation</strong> — Sieving, mixing & resting</span><span class="chev">▾</span></button>
+              <div class="body">
+                <p>The clay is sieved, mixed with binders like donkey dung, kneaded, and left to mature.</p>
+                <iframe src="https://www.rachnakar.com/wp-content/uploads/2020/10/VID_20181020_144557.mp4"></iframe>
+              </div>
+            </div>
+
+            <div class="step" id="s2">
+              <button onclick="toggleStep('s2')"><span><strong>2. Creating the base (thaal)</strong> — Flattening & shaping</span><span class="chev">▾</span></button>
+              <div class="body">
+                <p>A pindi stone flattens clay into a plaque. Fine details are shaped using paata and bhaladi tools.</p>
+                <iframe src="https://www.rachnakar.com/wp-content/uploads/2020/10/VID_20181020_153835.mp4"></iframe>
+                <iframe src="https://www.rachnakar.com/wp-content/uploads/2020/10/VID_20181020_154052.mp4"></iframe>
+              </div>
+            </div>
+
+            <div class="step" id="s3">
+              <button onclick="toggleStep('s3')"><strong>3. Building the figures</strong><span class="chev">▾</span></button>
+              <div class="body">
+                <p>Hollow slab-built forms create lightweight yet strong plaques.</p>
+                <iframe src="https://www.rachnakar.com/wp-content/uploads/2020/10/VID_20181020_154207.mp4"></iframe>
+              </div>
+            </div>
+
+            <div class="step" id="s4">
+              <button onclick="toggleStep('s4')"><strong>4. Finer details</strong><span class="chev">▾</span></button>
+              <div class="body">
+                <p>Faces, ornaments and clothing folds bring characters to life.</p>
+                <iframe src="https://www.rachnakar.com/wp-content/uploads/2020/10/VID_20181020_155558-1.mp4"></iframe>
+              </div>
+            </div>
+
+            <div class="step" id="s5">
+              <button onclick="toggleStep('s5')"><strong>5. Drying & firing</strong><span class="chev">▾</span></button>
+              <div class="body">
+                <p>The plaques are sun-dried for days and fired in an open kiln at ~900°C.</p>
+                <iframe src="https://www.rachnakar.com/wp-content/uploads/2020/10/VID_20181020_164618.mp4"></iframe>
+              </div>
+            </div>
+
+            <div class="step" id="s6">
+              <button onclick="toggleStep('s6')"><strong>6. Color & varnish</strong><span class="chev">▾</span></button>
+              <div class="body">
+                <p>White slip, natural pigments and jala — a plant-based lacquer — are applied.</p>
+                <div class="image">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV0q5pefJBoy0X5ouzCDAspBTZo6W3VGwdBA&s" alt="Coloring">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <h2>Why this craft matters</h2>
+          <p>Molela plaques preserve oral histories, tribal deities, migration stories and social memories — transforming clay into culture.</p>
+           <p>Historically, the craft thrived especially in January and February when the Bhil tribe members from Madhya Pradesh would visit the artisans and ask them to make slabs of their specific gods. This is how votive figures were the primary theme of the Molela pottery. The main gods were Devanarayan on a horse holding a spear and a lotus. Other gods are accomplices of Devnarayan like Yamaraj, the god of the dead, Bhairon in two forms— dark and ferocious, fair and compassionate, Ganesh, Durga, Sheshavatar, the serpent god Nagdev, etc. Usually, a priest accompanied the tribal to advise him on which god would benefit them the most. This Molela pottery would then be bought by the Bhils and worshipped at home.</p>
+
+
+          <h2>The challenges</h2>
+          <p>Declining artisan numbers, industrial clay mining, and shrinking markets threaten this heritage craft.</p>
+          p>Molela pottery is slowly losing the grandeur of its old days due to lack of awareness of this grand artform. In addition, the special soil from the river banks and ponds, which is instrumental for creating the pottery, is being ruined by forces from the brick-making industry in the region.</p>
+
+        <p>Will Molela need another godly intervention to survive? I don't know. All I know is that beautiful art like Molela, and beautiful people like Mohanlalji and his son deserved to be cherished and remembered forever.</p>
+
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>Quick Facts</h3>
+          <ul style="padding-left:20px; line-height:1.8; color:var(--muted);">
+            <li><strong>Origin:</strong> Molela, Rajasthan</li>
+            <li><strong>Materials:</strong> River clay, natural pigments</li>
+            <li><strong>Firing:</strong> Open kiln at 900°C</li>
+            <li><strong>Style:</strong> Terracotta relief plaques</li>
+          </ul>
+
+          <button onclick="openVideo('https://www.rachnakar.com/wp-content/uploads/2020/10/VID_20181020_150031-1.mp4')" style="margin-top:14px; padding:12px 18px; background:var(--accent); color:white; border:0; border-radius:12px; cursor:pointer; width:100%;">
+            ▶ Watch Short Clip
+          </button>
+        </div>
+
+        <div class="card">
+          <h3>Wall of Fame</h3>
+          <img src="https://www.rachnakar.com/wp-content/uploads/2020/10/IMG_20181020_143659-1536x1152.jpg" style="width:100%; border-radius:12px;">
+          <p class="caption">Padma Shri and Shilp Guru awards displayed proudly.</p>
+        </div>
+
+        <section id="awards" class="card">
+          <h3>Awards & Recognitions</h3>
+          <div class="image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE4cJitCOstXAL4YWbBlX6V5H_YwHRCPqCWA&s" alt="Padma Shri">
+            <p class="image-caption">Padma Shri Award</p>
+          </div>
+          <div class="image-container">
+            <img src="https://media.newindianexpress.com/TNIE%2Fimport%2F2022%2F11%2F29%2Foriginal%2FShilp_Guru_award.jpg" alt="Shilp Guru">
+            <p class="image-caption">Shilp Guru Award</p>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <section class="card">
+      <h2 style="color:var(--accent)">✨ Molela Mini-Quiz — Test Your Clay Wisdom</h2>
+      <div id="quiz">
+
+        <div class="q">
+          <p><strong>1. Molela artisans do NOT use which tool?</strong></p>
+          <button onclick="check(this,false)">Paintbrush of peacock feather</button>
+          <button onclick="check(this,true)">Potter’s wheel</button>
+          <button onclick="check(this,false)">Flat stone (pindi)</button>
+        </div>
+
+        <div class="q">
+          <p><strong>2. Why are Molela plaques lightweight?</strong></p>
+          <button onclick="check(this,false)">Air trapped magically</button>
+          <button onclick="check(this,true)">Hollow slab-built figures</button>
+          <button onclick="check(this,false)">Special varnish</button>
+        </div>
+
+        <div class="q">
+          <p><strong>3. What is jala?</strong></p>
+          <button onclick="check(this,false)">Rain-summoning ritual</button>
+          <button onclick="check(this,true)">Plant-based lacquer</button>
+          <button onclick="check(this,false)">Clay binder</button>
+        </div>
+
+        <div class="q">
+          <p><strong>4. What is mixed with the clay?</strong></p>
+          <button onclick="check(this,false)">Rose petals</button>
+          <button onclick="check(this,false)">Shells</button>
+          <button onclick="check(this,true)">Donkey dung</button>
+        </div>
+
+        <div class="q">
+          <p><strong>5. Molela is near which major city?</strong></p>
+          <button onclick="check(this,false)">Jaisalmer</button>
+          <button onclick="check(this,true)">Udaipur</button>
+          <button onclick="check(this,false)">Pushkar</button>
+        </div>
+
+        <button onclick="finishQuiz()" style="background:var(--accent); color:white; padding:14px 20px; border:0; border-radius:12px; margin-top:20px; cursor:pointer;">
+          Submit & See Score
+        </button>
+
+        <p id="scoreBox" style="display:none; margin-top:20px; padding:16px; background:#fff2ec; border-radius:12px; font-weight:600;"></p>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    function toggleStep(id){document.getElementById(id).classList.toggle('open');}
+    function openVideo(url){window.open(url, "_blank");}
+
+    let score = 0;
+
+    function check(btn, correct){
+      if(btn.disabled) return;
+      let group = btn.parentElement.querySelectorAll("button");
+      group.forEach(b => b.disabled = true);
+      if(correct){btn.classList.add("correct"); score++;}
+      else{
+        btn.classList.add("wrong");
+        group.forEach(b => {if(b.getAttribute("onclick").includes("true")) b.classList.add("correct");});
+      }
+    }
+
+    function finishQuiz(){
+      let total = document.querySelectorAll("#quiz .q").length;
+      let box = document.getElementById("scoreBox");
+      box.style.display = "block";
+      box.innerHTML = `You scored <strong>${score}/${total}</strong> 🎉`;
+    }
+  </script>
+
+</body>
+</html>
